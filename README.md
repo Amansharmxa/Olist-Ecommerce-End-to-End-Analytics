@@ -47,12 +47,3 @@ preview of the interactive executive dashboard built in Power BI:
 - Uncovered critical delivery bottleneck patterns by analyzing order shipping delays against estimated timelines.
 - Identified primary revenue-generating product categories and customer payment preferences (such as high credit card adoption) to aid inventory and business strategy.
 
----
-
-## 📂 Repository Structure
-```text
-📦 Olist-Ecommerce-End-to-End-Analytics
- ┣ 📂 scripts/                # Python scripts (Cleaning & DB Ingestion)
- ┣ 📂 sql_queries/            # Advanced SQL query scripts and business logic
- ┣ 📂 dashboard/              # Power BI .pbix file and visual assets
- ┗ 📜 README.md               # Project documentation
