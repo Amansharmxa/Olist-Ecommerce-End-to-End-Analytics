@@ -5,7 +5,7 @@ An end-to-end e-commerce data analytics project using Python (Pandas) for data p
 ## 🛠️ Tech Stack & Tools Used
 - **Python (Pandas, SQLAlchemy, Jupyter Notebook):** Automated data preprocessing, handling missing values, standardizing date formats, and batch-loading data into the database.
 - **PostgreSQL & pgAdmin:** Relational database management, schema setup (`public`), and executing business-critical SQL queries.
-- **Power BI:** Designing executive interactive dashboards, data modeling, and visualizing Key Performance Indicators (KPIs).
+- **Power BI:** Designing executive interactive dashboards, data modeling, custom DAX measures, and visualizing Key Performance Indicators (KPIs).
 
 ---
 
@@ -14,10 +14,10 @@ An end-to-end e-commerce data analytics project using Python (Pandas) for data p
 ### 1. Data Cleaning & Preprocessing (Python)
 - Loaded multiple raw Olist CSV datasets and inspected their structural integrity.
 - Handled missing values, standardized text fields, and cleaned data anomalies across tables.
-- Converted timestamp columns (Order purchase, delivery dates, etc.) into standard datetime formats to enable temporal and logistics analysis.
+- Converted timestamp columns (Order purchase, delivery dates, etc.) into standard datetime formats to generate clean, processed datasets ready for database insertion.
 
 ### 2. Automated Database Ingestion (Python & PostgreSQL)
-- Developed automated Python scripts utilizing `SQLAlchemy` to seamlessly push the cleaned dataframes directly into a PostgreSQL relational database (`olist_ecommerce`).
+- Developed automated Python scripts utilizing `SQLAlchemy` to seamlessly push the processed dataframes directly into a PostgreSQL relational database (`olist_ecommerce`).
 - Set up a structured schema making the data ready for heavy analytical operations.
 
 ### 3. Database Management & Advanced SQL Querying (SQL)
@@ -30,12 +30,29 @@ An end-to-end e-commerce data analytics project using Python (Pandas) for data p
 ### 4. Data Visualization (Power BI)
 - Connected Power BI directly to the PostgreSQL database.
 - Designed a clean, interactive dashboard featuring core performance metrics and visual trends.
-- **KPI Cards:** Highlighted Total Revenue, Total Orders, Total Products Sold, and Average Delivery Days.
-- **Visual Charts & Slicers:** Included bar charts for category performance, donut charts for payment shares, line charts for sales trends, and dynamic date slicers.
+- **KPI Cards:** Highlighted Total Revenue ($15.84M), Total Orders (99K), Total Products Sold (113K), and Average Delivery Days (12.50).
+- **Visual Charts & Slicers:** Included bar charts for category performance, donut charts for payment shares, and dynamic year slicers (2016-2018).
+
+---
+
+## 📊 Executive Power BI Dashboard Preview
+Berikut is a preview of the interactive executive dashboard built in Power BI:
+
+![Power BI Dashboard Preview](dashboard_preview.png)
 
 ---
 
 ## 🚀 Key Insights & Learnings
 - Successfully automated the ETL (Extract, Transform, Load) pipeline for 9 complex relational tables using Python.
 - Uncovered critical delivery bottleneck patterns by analyzing order shipping delays against estimated timelines.
-- Identified primary revenue-generating product categories and customer payment preferences to aid inventory and business strategy.
+- Identified primary revenue-generating product categories and customer payment preferences (such as high credit card adoption) to aid inventory and business strategy.
+
+---
+
+## 📂 Repository Structure
+```text
+📦 Olist-Ecommerce-End-to-End-Analytics
+ ┣ 📂 scripts/                # Python scripts (Cleaning & DB Ingestion)
+ ┣ 📂 sql_queries/            # Advanced SQL query scripts and business logic
+ ┣ 📂 dashboard/              # Power BI .pbix file and visual assets
+ ┗ 📜 README.md               # Project documentation
