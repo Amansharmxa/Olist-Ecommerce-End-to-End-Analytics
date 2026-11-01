@@ -38,7 +38,7 @@ An end-to-end e-commerce data analytics project using Python (Pandas) for data p
 ## 📊 Executive Power BI Dashboard Preview
 Berikut is a preview of the interactive executive dashboard built in Power BI:
 
-![Power BI Dashboard Preview](dashboard_preview.png)
+![Power BI Dashboard Preview](dashboard.png)
 
 ---
 
